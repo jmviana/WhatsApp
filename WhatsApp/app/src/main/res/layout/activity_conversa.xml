@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".activity.ConversaActivity">
+
+    <include
+        android:id="@+id/tb_conversa"
+        layout="@layout/toolbar"></include>
+
+    <ListView
+        android:id="@+id/lv_conversas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        app:layout_constraintBottom_toTopOf="@+id/ll_mensagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_conversa"></ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/edit_mensagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Mensagem"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <ImageButton
+            android:id="@+id/bt_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_send"
+            android:theme="@style/botaoPadrao" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
