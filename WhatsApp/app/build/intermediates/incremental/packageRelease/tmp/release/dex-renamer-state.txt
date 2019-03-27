@@ -1,0 +1,4 @@
+#Sun Nov 18 11:25:11 GMT 2018
+base.0=C\:\\Users\\jmvia\\AndroidStudioProjects\\WhatsApp\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex
